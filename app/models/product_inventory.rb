@@ -1,3 +1,3 @@
 class ProductInventory < ApplicationRecord
-  validates :name, description, presence: true
+  validates :quantity, presence: true
 end

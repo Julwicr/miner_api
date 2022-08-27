@@ -1,3 +1,3 @@
 class ProductCategory < ApplicationRecord
-  validates :quantity, presence: true
+  validates :name, :description, presence: true
 end

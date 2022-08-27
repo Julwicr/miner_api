@@ -4,12 +4,13 @@ class SessionsController < ApplicationController
     @user = User.find_by(username: request.params[:username])
 
     err = {
-      message: 'User not found.'
+      message: 'User not found.',
+      authenticated: false
     }
 
     err_pass = {
       message: 'Wrong password.',
-      authentitcate: false
+      authentitcated: false
     }
 
     if @user && @user.password == params[:password]

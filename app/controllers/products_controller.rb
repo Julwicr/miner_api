@@ -1,9 +1,13 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: :show
-
   def index
     @products = Product.all
 
     render json: @products
+  end
+
+  def show
+    @product = Product.find_by(article_number: params[:id])
+
+    render json: @product
   end
 end

@@ -1,5 +1,6 @@
 API endpoints :
 
 /products returns all products sorted by categroy
-/categories returns all categories
-/categories/products returns products nested in categories
+/products/{article_number}
+/categories returns a list of all categories
+/categories/{category} returns a list of all product from the given category

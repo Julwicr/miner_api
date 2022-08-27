@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-  resources :categories, only: %i[index]
+  resources :product_categories, only: %i[index], path: 'categories'
   resources :products, only: %i[index]
-
 end

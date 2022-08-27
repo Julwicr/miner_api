@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  post '/auth', to: 'sessions#auth'
+  resources :product_categories, only: %i[index show], path: 'categories', param: :name
+  resources :products, only: %i[index show]
 end

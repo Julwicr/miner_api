@@ -36,16 +36,16 @@ inventory_count = 0
 
 # Creating block products
 
-img_block = ['https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Plains_Grass_Block.png/revision/latest?cb=20190525093706',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/31/Block_of_Netherite_JE1_BE1.png/revision/latest?cb=20200320021504',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/26/Block_of_Redstone_JE2_BE2.png/revision/latest?cb=20191230030530',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/08/Diorite.png/revision/latest?cb=20220112085641',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7d/Slime_Block_LCE.png/revision/latest?cb=20200503092235',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0b/Block_of_Emerald_JE4_BE3.png/revision/latest?cb=20200226013452',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Honeycomb_Block_JE1_BE1.png/revision/latest?cb=20200124200218',
-             'https://static.wikia.nocookie.net/minecraft/images/9/9d/BlockOfGoldNew.png/revision/latest?cb=20191012230400',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/37/Light_Blue_Wool_JE3_BE3.png/revision/latest?cb=20200315193219',
-             'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/02/Spruce_Leaves.png/revision/latest/scale-to-width-down/250?cb=20220417090102']
+img_block = ['https://res.cloudinary.com/julwicr/image/upload/v1661639956/development/pngegg_1_vfmnph.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639953/development/pngegg_rd3abd.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639952/development/pngegg_8_ebpket.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639951/development/pngegg_6_ddwmqm.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639950/development/pngegg_5_peq3x4.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639950/development/pngegg_3_ih1g5m.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639950/development/pngegg_7_tbg6kk.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639950/development/pngegg_4_ns4532.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661639949/development/pngegg_2_vxacj4.png',
+             'https://res.cloudinary.com/julwicr/image/upload/v1661640423/development/pngwingdf_vyexce.png']
 img_count = 0
 
 # create blocks
@@ -71,7 +71,7 @@ Product.create!(name: 'Iron pickaxe',
                 price: rnd_price.sample,
                 product_category: cat_tool,
                 product_inventory: inventories[inventory_count],
-                img_path: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3f/Iron_Pickaxe_JE2_BE1.png/revision/latest?cb=20200127071115',
+                img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1661675348/development/kindpng_280795_ljtwvs.png',
                 article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -81,7 +81,7 @@ Product.create!(name: 'Diamond axe',
   price: rnd_price.sample,
   product_category: cat_tool,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/40/Diamond_Axe_JE3_BE3.png/revision/latest?cb=20200226193844',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1661675349/development/kindpng_799141_auenlx.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -91,7 +91,7 @@ Product.create!(name: 'Golden shovel',
   price: rnd_price.sample,
   product_category: cat_tool,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c9/Golden_Shovel_JE3_BE2.png/revision/latest/scale-to-width-down/160?cb=20200217235415',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1661675348/development/PngItem_209457_hy8o8p.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -103,7 +103,7 @@ Product.create!(name: 'Leather pants',
   price: rnd_price.sample,
   product_category: cat_gear,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/08/Leather_Pants_JE1_BE1.png/revision/latest?cb=20190913142655',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1661675348/development/apngwing_fv5zv6.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -113,7 +113,7 @@ Product.create!(name: 'Diamond helmet',
   price: rnd_price.sample,
   product_category: cat_gear,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/87/Diamond_piglin_helmet.png/revision/latest?cb=20200219032358',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1661675348/development/kindpng_581857_fkunzv.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1

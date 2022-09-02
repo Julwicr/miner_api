@@ -23,14 +23,14 @@ cat_food = ProductCategory.create!(name: 'Food', description: 'Starve no more wi
 rnd_inventory = (1..350).to_a
 inventories = []
 
-25.times do
+20.times do
   product_invent = ProductInventory.create!(quantity: rnd_inventory.sample)
   inventories.push(product_invent)
 end
 
 # Creating products
 
-article_number = 01
+article_number = 1
 rnd_price = (1..99).to_a
 inventory_count = 0
 
@@ -117,3 +117,45 @@ Product.create!(name: 'Diamond helmet',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
+
+# enchant
+
+Product.create!(name: 'Fortune',
+  description: "More ore for you !",
+  price: rnd_price.sample,
+  product_category: cat_enchantment,
+  product_inventory: inventories[inventory_count],
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  article_number: article_number)
+article_number += 1
+inventory_count += 1
+
+Product.create!(name: 'Infinity',
+  description: "Never run out of arrow.",
+  price: rnd_price.sample,
+  product_category: cat_enchantment,
+  product_inventory: inventories[inventory_count],
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  article_number: article_number)
+article_number += 1
+inventory_count += 1
+
+Product.create!(name: 'Looting',
+  description: "More loot for you !",
+  price: rnd_price.sample,
+  product_category: cat_enchantment,
+  product_inventory: inventories[inventory_count],
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  article_number: article_number)
+article_number += 1
+inventory_count += 1
+
+# food
+
+Product.create!(name: 'Potato',
+  description: "Simple but effective.",
+  price: 2,
+  product_category: cat_food,
+  product_inventory: inventories[inventory_count],
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/potato_n8cmsr.png',
+  article_number: article_number)

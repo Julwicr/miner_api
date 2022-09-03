@@ -125,7 +125,7 @@ Product.create!(name: 'Fortune',
   price: rnd_price.sample,
   product_category: cat_enchantment,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662196714/development/bbook_tdrkin.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -135,7 +135,7 @@ Product.create!(name: 'Infinity',
   price: rnd_price.sample,
   product_category: cat_enchantment,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662196714/development/bbook_tdrkin.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -145,7 +145,7 @@ Product.create!(name: 'Looting',
   price: rnd_price.sample,
   product_category: cat_enchantment,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/enchant_uoulsk.png',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662196714/development/bbook_tdrkin.png',
   article_number: article_number)
 article_number += 1
 inventory_count += 1
@@ -157,5 +157,5 @@ Product.create!(name: 'Potato',
   price: 2,
   product_category: cat_food,
   product_inventory: inventories[inventory_count],
-  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662118056/development/potato_n8cmsr.png',
+  img_path: 'https://res.cloudinary.com/julwicr/image/upload/v1662196418/development/pootato_r8tg60.png',
   article_number: article_number)

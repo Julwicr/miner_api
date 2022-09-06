@@ -1,18 +1,18 @@
 require 'faker'
 
-user1 = User.create!(username: 'Miner01',
-                    password: 'password',
-                    first_name: 'John',
-                    last_name: 'Doe',
-                    telephone: 010100100110,
-                    email: 'johndoe@miner.com')
+# user1 = User.create!(username: 'Miner01',
+#                     password: 'password',
+#                     first_name: 'John',
+#                     last_name: 'Doe',
+#                     telephone: 010100100110,
+#                     email: 'johndoe@miner.com')
 
-UserAddress.create!(user: user1,
-                   address: 'Labastrasse 12',
-                   city: 'Berlin',
-                   postal_code: '10545',
-                   country: 'Germany',
-                   telephone: 010200200220)
+# UserAddress.create!(user: user1,
+#                    address: 'Labastrasse 12',
+#                    city: 'Berlin',
+#                    postal_code: '10545',
+#                    country: 'Germany',
+#                    telephone: 010200200220)
 
 cat_tool = ProductCategory.create!(name: 'Tool', description: 'From the pick to the shovel, our best selection of tools that will make you more efficient.')
 cat_gear = ProductCategory.create!(name: 'Gear', description: 'All you need to wear to be the most robust, undetectable miner you could ever dream to be.')

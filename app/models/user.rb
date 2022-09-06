@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+  require "securerandom"
+
+  has_secure_password
+
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP, message: "Email invalid"  },
                     uniqueness: { case_sensitive: false },
                     length: { minimum: 4, maximum: 250 }
